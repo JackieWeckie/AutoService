@@ -1,6 +1,6 @@
 public class Car extends MotorizedTransport {
-    public Car(String engineType, String model) {
-        super(engineType, model);
+    public Car(String engineType, String model, String color) {
+        super(engineType, model, color);
     }
 
     @Override
@@ -21,6 +21,11 @@ public class Car extends MotorizedTransport {
     @Override
     public void makePumped() {
         System.out.println("The " + model + "'s wheels was successfully pumped!");
+    }
+
+    @Override
+    public void makeColored() {
+        System.out.println("The " + model + " was successfully painted!");
     }
 
     @Override

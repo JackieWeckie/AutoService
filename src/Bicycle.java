@@ -1,6 +1,6 @@
 public class Bicycle extends WheeledTransport {
-    public Bicycle(String type, byte wheelCount) {
-        super(type, wheelCount);
+    public Bicycle(String type, byte wheelCount, String color) {
+        super(type, wheelCount, color);
     }
 
     @Override
@@ -11,6 +11,11 @@ public class Bicycle extends WheeledTransport {
     @Override
     public void makePumped() {
         System.out.println("The " + type + "'s wheels was successfully pumped!");
+    }
+
+    @Override
+    public void makeColored() {
+        System.out.println("The " + type + " was successfully painted!");
     }
 
     @Override
